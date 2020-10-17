@@ -92,7 +92,7 @@ h1{/*This is the spacing effects*/
    border-radius: 25px
 
 }
-.addButton{
+.add{
   outline:none;
   height:40px;
   width: 40px;
@@ -102,7 +102,7 @@ h1{/*This is the spacing effects*/
   margin:0.25rem;
   cursor: pointer;/*this is the cursor effects, dig a little more into this*/
 }
-.addButton:hover{
+.add:hover{
   opacity: .7;
 }
 .container{/*this centered the container field*/
@@ -130,7 +130,7 @@ h1{/*This is the spacing effects*/
   font-size: 1.4rem;
 }
 
-.editButton{
+.edit{
   outline:none;
   font-size: 1rem;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -139,10 +139,10 @@ h1{/*This is the spacing effects*/
   color: gray;
 }
 
-.editButton:hover{
+.edit:hover{
   opacity: .7;
 }
-.removeButton{
+.remove{
   outline:none;
   font-size: 1rem;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -150,6 +150,6 @@ h1{/*This is the spacing effects*/
   border-radius: 25%;
   color: gray;
 }
-.removeButton:hover{
+.remove:hover{
   opacity: .7;
 }
