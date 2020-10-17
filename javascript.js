@@ -19,7 +19,7 @@ class item{
     var itemBox= document.createElement('div');
     itemBox.classList.add('item');
 
-    var input = document.createElement('input');
+      var input = document.createElement('input');
     	input.type = "text";
     	input.disabled = true;
     	input.value = name;
@@ -27,23 +27,35 @@ class item{
 
     	var edit = document.createElement('button');
     	edit.classList.add('edit');
-    	edit.innerHTML = "EDIT";
-    	edit.addEventListener('click', () => this.edit(input, name));
+    	edit.innerHTML = "Edit";//could be this
+      edit.addEventListener('click', () => this.edit(input, name));
+      
+      var remove = document.createElement('button');
+      remove.classList.add('remove');
+      remove.innerHTML = "Remove";//this could be it
+      remove.addEventListener('click', () => this.remove(itemBox))
 
-    Let itemBox = document.createElement('div');
-    itemBox.classList.add('item');
-
-    Let editButton = document.createElement('button');//This is different
-    editButton.classList.add('editButton');
-
-    Let removeButton = document.createElement('button');//This is different
-    removeButton.classList.add("removeButton");
-
-    container.appendChild(itemBox);
+      container.appendChild(itemBox);
 
     itemBox.appendChild(input);
     itemBox.appendChild(editButton);
-    itemBox.appendChild(removeButton);
+    itemBox.appendChild(removeButton);    
+  }
+
+  edit(input,name){
+    if(input.disabled == true){
+      input.disabled = !input.disabled;
+    }else{
+      input.disabled = !input.disabled;
+      let indexof = todos.indexOf(name);
+      todos[indexof] = input.value;
+      window.localStorage.setItem("todos", JSON.stringify(todos));
+    }
+  }
+
+  remove(itemBox, name){
+    itemBox.parentNode.removeChild(itemBox);
+    let index = todos.indexOf(name);
 
   }
 
