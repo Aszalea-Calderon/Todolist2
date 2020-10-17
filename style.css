@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Stalemate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans+Condensed:wght@300&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 
+font-family: 'League Script', cursive;-- header
+font-family: 'Courgette', cursive;
+font-family: 'Open Sans Condensed', sans-serif; */
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  border:1px solid transparent;/*this may cause issues later */
+}
+
+body{
+  height:100%;
+  background-image:url("/images/backdrop3.jpg");
+  font-family: 'League Script', cursive;
+}
+
+h1{/*This is the spacing effects*/
+  font-size: 4rem;
+  font-weight: 50;
+  margin:1rem 0 3rem;
+  text-align: center;
+}
+
+.input_div{/*this centered the top of the checklist*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input_div .input{/*this edits the hell out of the default input field*/
+  padding:0.5rem 1rem;
+  font-family: 'Courgette', cursive; 
+   height:50px;
+   font-size: 1.15rem;
+   outline:none;
+   border: none;/*we may want to add a border here to make it a little easier to read*/
+   width: 450px;
+   margin: 0.25rem;
+   border-radius: 25px
+
+}
+.addButton{
+  outline:none;
+  height:40px;
+  width: 40px;
+  border-radius: 25%;
+  border: none;/*we may want to add a border here to make it a little easier to read*/
+  color:gray;
+  margin:0.25rem;
+  cursor: pointer;/*this is the cursor effects, dig a little more into this*/
+}
+.addButton:hover{
+  opacity: .7;
+}
+.container{/*this centered the container field*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  outline:none;
+
+}
+.item{/*this is that interesting line in between*/
+  padding:0.5rem;
+  margin-bottom:1.5rem;
+  border-bottom: 4px solid pink;
+  border-radius: 25px;
+}
+
+.item_input{/*this removes the box around the item and allows you to have it on its own line*/
+  background:none;
+  color:black;
+  border: none;
+  width: 340px;/*this extends the width of the item*/
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.4rem;
+}
+
+.editButton{
+  outline:none;
+  font-size: 1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 1%;
+  border-radius: 25%;
+  color: gray;
+}
+
+.editButton:hover{
+  opacity: .7;
+}
+.removeButton{
+  outline:none;
+  font-size: 1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 1%;
+  border-radius: 25%;
+  color: gray;
+}
+.removeButton:hover{
+  opacity: .7;
+}
